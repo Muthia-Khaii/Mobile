@@ -22,7 +22,7 @@ public class Laman_Utama extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Membuat Intent untuk berpindah ke MainActivity (yang berisi kalkulator)
-                Intent intent = new Intent(Laman_Utama.this, MainActivity.class);
+                Intent intent = new Intent(Laman_Utama.this, Menu.class);
                 startActivity(intent);  // Menjalankan intent untuk pindah ke MainActivity
                 finish();  // Menutup aktivitas saat ini (Laman_Utama)
             }

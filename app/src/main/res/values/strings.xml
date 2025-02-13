@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Calculator</string>
+    <string name="app_name">MY APP</string>
+    <string name="nama">Nama: Muthia Khairunnisa</string>
+    <string name="kelas">Kelas: XII RPL 1</string>
+    <string name="absen">Absen: 22</string>
+    <string name="username">Muthia Khairunnisa</string>
 </resources>

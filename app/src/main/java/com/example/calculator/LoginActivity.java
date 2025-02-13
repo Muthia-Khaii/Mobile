@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            if (dbHelper.checkUser(email, password)) {
+            if (dbHelper.readUser(email, password)) {
                 Toast.makeText(LoginActivity.this, "Login berhasil!", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(LoginActivity.this, Laman_Utama.class));
                 finish();

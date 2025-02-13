@@ -55,7 +55,8 @@ public class SignUp extends AppCompatActivity {
             }
 
             // Proses registrasi
-            if (dbHelper.registerUser(email, password)) {
+            long result = dbHelper.insertUser(email, password);
+            if (result != -1) {
                 Toast.makeText(SignUp.this, "Pendaftaran berhasil!", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(SignUp.this, LoginActivity.class));
                 finish();

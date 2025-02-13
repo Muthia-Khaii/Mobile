@@ -1,14 +1,21 @@
 package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.widget.Button;
 import android.os.Bundle;
 import android.view.View;
+import com.example.calculator.HNote;
 import android.widget.TextView;
+import androidx.core.view.ViewCompat;
 import com.google.android.material.button.MaterialButton;
 import java.text.DecimalFormat;
+import com.example.calculator.databinding.ActivityMainBinding;
+import  com.example.calculator.Menu;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private static final char ADDITION = '+';
     private static final char SUBTRACTION = '-';
@@ -59,6 +66,20 @@ public class MainActivity extends AppCompatActivity {
         buttonEqual = findViewById(R.id.equal);
         buttonPercent = findViewById(R.id.percent);
 
+
+        Button btnExit = findViewById(R.id.btnExit);
+        btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Menu.class);
+                startActivity(intent);
+                finish(); // Menutup MainActivity agar tidak bisa kembali dengan tombol back
+            }
+        });
+
+
+
+
         // Inisialisasi MediaPlayer
         buttonClickSound = MediaPlayer.create(this, R.raw.pop_39222);
 
@@ -69,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 playButtonClickSound(); // Mainkan suara
                 inputDisplay.setText(inputDisplay.getText() + "0");
             }
+
         });
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -273,6 +295,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void goToNotes(View view) {
+        Intent intent = new Intent(this, HNote.class);
+        startActivity(intent);
+    }
+
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -281,4 +309,5 @@ public class MainActivity extends AppCompatActivity {
             buttonClickSound.release();
         }
     }
+
 }
