@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">myapp</string>
+    <string name="title">My Aplication</string>
+    <string name="username">Muthia Khairunnisa</string>
+    <string name="exit">Keluar</string>
+    <string name="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="section1">Mi-Catalogue</string>
+    <string name="item1">Calculator</string>
+    <string name="item2">Notes! :3</string>
+    <string name="item3">Our Book</string>
+    <string name="item4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="item5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="copyright">Muthia Khairunnisa</string>
+    <string name="nama">Muthia Khairunnisa</string>
+    <string name="kelas">XII-RPL 1</string>
+    <string name="absen">Absen :22</string>
+    <string name="tglpembuatan">Tanggal Pembuatan: 15 Februari 2025</string>
+    <string name="version">Version Control: 1.0</string>
+    <string name="hehe"> </string>
+</resources>
